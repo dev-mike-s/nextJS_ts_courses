@@ -1,0 +1,27 @@
+.header {
+    text-align: center;
+}
+
+.main {
+    width: 40%;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: solid black;
+    padding: 10px;
+}
+
+.sub {
+    width: 40%;
+    margin-bottom: 10px;
+    border-radius: 40px;
+    border: solid green;
+    padding: 10px;
+    background-color: lightgoldenrodyellow;
+    transition: background-color 1s;
+}
+
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
