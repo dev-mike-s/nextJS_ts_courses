@@ -1,0 +1,30 @@
+/** * root/app/globals.css
+ * Modernisierung auf Tailwind v4 (CSS-first Engine).
+ * Nutzt native CSS-Imports statt der alten @tailwind Directives.
+ */
+
+@import "tailwindcss";
+
+@layer base {
+    body {
+        @apply bg-gray-50 text-gray-900 antialiased;
+    }
+}
+
+@layer utilities {
+    .scrollbar-hide {
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+    }
+    .scrollbar-hide::-webkit-scrollbar {
+        display: none;
+    }
+}
+
+body {
+    border: 10px solid red !important;
+}
+
+.flex { display: flex; }
+.shrink-0 { flex-shrink: 0; }
+.w-full { width: 100%; }
