@@ -5,6 +5,7 @@
  */
 
 import Slider from '../components/Slider';
+import ProduktListe from '../components/ProduktListe';
 
 export default function HomePage() {
     return (
@@ -20,8 +21,10 @@ export default function HomePage() {
                 </p>
             </div>
 
-            <div className="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+            <div className="mt-16">
+                <ProduktListe />
             </div>
+
         </section>
     )
 }
