@@ -12,7 +12,7 @@ Kompakter Lernpfad fuer Frontend bis Full-Stack Basics mit Next.js, TypeScript u
 - `03_mike_uebungen`: eigenstaendige Uebungen je Modul
 - `04_mike_next_abschlussprojekt`: Abschlussprojekt-Planung und Nachweis
 
-## Kernkompetenzen (HR Keywords)
+## Kernkompetenzen
 Next.js, React, TypeScript, App Router, Routing, Layouts, API Route Handlers, Server Actions, Caching/Revalidate, Testing Basics, Deployment Vorbereitung, Tailwind, Bootstrap.
 
 ## Nachweisstruktur
