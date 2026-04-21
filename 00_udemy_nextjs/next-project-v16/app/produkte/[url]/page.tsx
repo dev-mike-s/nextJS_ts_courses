@@ -22,6 +22,7 @@ export default async function ProduktSeite({ params }: { params: Promise<{ url: 
                         src={produkt.bild}
                         alt={produkt.name}
                         fill
+                        sizes="(max-width: 768px) 100vw, 33vw"
                         className="object-cover"
                         priority
                     />
