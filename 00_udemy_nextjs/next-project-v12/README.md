@@ -1,7 +1,16 @@
-﻿# next-project-v12 (Kurz)
+﻿# next-project-v12
 
-Fokus: Praktische Vertiefung auf Next.js v12 Basis.
+## Tech Profile
+- Stack: Legacy Next.js 12 + React 17
+- Routing: Pages Router (`pages/*`)
+- UI: Bootstrap + React-Bootstrap
+- Rendering: Client-Side Rendering (CSR)
+- Data Source: Local JSON DB (`jsondb/produkte.js`)
+- Backend Integration: Mongoose (legacy-style endpoints)
 
-Keywords: Next.js, React, Bootstrap, Komponentenstruktur.
-
-Status: Lernprojekt.
+## Setup
+- Install: `npm install`
+- Dev (Port 3000): `npm run dev`
+- URL: `http://localhost:3000`
+- Build: `npm run build`
+- Start: `npm run start`

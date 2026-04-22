@@ -1,5 +1,6 @@
-//root/jsondb/produkte.js
-
+/**
+ * Lokale Produktdaten fuer v16. Dient als Seed-Quelle fuer die Datenbank.
+ */
 const jsondb = {
     produkte: [
         {
@@ -12,7 +13,7 @@ const jsondb = {
         },
         {
             name: 'Coca Cola',
-            beschreibung: 'Eisgekühlte Cola',
+            beschreibung: 'EisgekÃ¼hlte Cola',
             kategorie: 'Trinken',
             preis: 1.99,
             url: 'cola',
@@ -44,7 +45,7 @@ const jsondb = {
         },
         {
             name: 'Schokoladen Muffin',
-            beschreibung: 'Sehr süßer Schoko Muffin',
+            beschreibung: 'Sehr sÃ¼ÃŸer Schoko Muffin',
             kategorie: 'Nachspeise',
             preis: 3.20,
             url: 'muffin',
@@ -59,8 +60,8 @@ const jsondb = {
             bild: '/bilder/produkte/pizza.jpg'
         },
         {
-            name: 'Süßkartoffel Pommes',
-            beschreibung: 'Süßkartoffel Pommes mit Dip',
+            name: 'SÃ¼ÃŸkartoffel Pommes',
+            beschreibung: 'SÃ¼ÃŸkartoffel Pommes mit Dip',
             kategorie: 'Hauptgericht',
             preis: 4.80,
             url: 'pommes',

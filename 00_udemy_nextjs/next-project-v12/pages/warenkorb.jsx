@@ -1,5 +1,6 @@
-//root/pages/warenkorb.jsx
-
+/**
+ * Warenkorb-Seite in v12. Zeigt einen einfachen Tabellenaufbau mit statischen Beispielwerten.
+ */
 import React from 'react';
 import {Table, CloseButton, Button, Card} from 'react-bootstrap';
 import Image from 'next/image';

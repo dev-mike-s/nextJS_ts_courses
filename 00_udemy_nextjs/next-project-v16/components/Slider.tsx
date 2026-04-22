@@ -1,12 +1,6 @@
-//root/components/Slider.tsx
-
-/* CLIENT COMPONENT
- * Nutzt natives CSS-Snap für die Performance statt z.B. schwerer Bootstrap-JS-Libs (Carousel).
- * Bilder werden über das 'fill' Property responsiv optimiert.
- * Nutzt snap-mandatory und scroll-smooth für native Animationen.
- * useEffect-Methode wird nach dem Rendern ausgeführt.
+/**
+ * Client-Slider in v16. Wechselt Bilder automatisch ueber React State und Effect.
  */
-
 'use client';
 
 import Image from 'next/image';
@@ -21,8 +15,6 @@ const slides = [
 export default function Slider() {
 
     const [currentIndex, setCurrentIndex] = useState(0);
-
-    // REFERENCE: Ein direkter Zugriff auf das HTML-Element im Browser-DOM
     const scrollContainerRef = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
@@ -33,8 +25,6 @@ export default function Slider() {
 
         return () => clearInterval(timer);
     }, [] );
-
-    // Animation: Scrollt den Container automatisch zum neuen Index
     useEffect(() => {
         if (scrollContainerRef.current) {
             const { offsetWidth } = scrollContainerRef.current;
@@ -84,5 +74,3 @@ export default function Slider() {
             </div>
       )
 }
-
-// className="object-cover transition-transform duration-700 hover:scale-105"

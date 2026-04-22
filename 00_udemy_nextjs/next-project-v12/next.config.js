@@ -1,11 +1,9 @@
-// root/next.config.js
-
-/** @type {import('next').NextConfig} */
+/**
+ * Next.js Konfiguration fuer v12. Aktiviert Strict Mode und SWC Minify.
+ */
 const nextConfig = {
 
     reactStrictMode: true,
-
-    // Compiler-Optionen (v12 nutzte SWC, den schnellen Rust-Compiler)
     swcMinify: true,
 }
 

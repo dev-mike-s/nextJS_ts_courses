@@ -1,71 +1,97 @@
-//root/jsondb/produkte.js
-
+/**
+ * Lokale Produktdaten fuer v12. Diese Datei simuliert eine kleine Datenquelle ohne externe API.
+ */
 const jsondb = {
     produkte: [
         {
             name: 'Crispy Burger',
-            beschreibung: 'american style burger',
+            beschreibung: 'Saftiges Rindfleisch mit knusprigem Bacon und Spezialsauce im American Style.',
             kategorie: 'Hauptgericht',
             preis: 6.99,
             url: 'burger',
-            bild: '/bilder/produkte/burger.jpg'
+            bild: '/bilder/produkte/burger.jpg',
+            extras: [
+                { text: 'Doppelt Fleisch', preis: 4.00 },
+                { text: 'Extra Scharf (JalapeÃ±os)', preis: 0.50 },
+                { text: 'Cheddar KÃ¤se', preis: 1.00 }
+            ]
         },
         {
             name: 'Coca Cola',
-            beschreibung: 'Eisgekühlte Cola',
+            beschreibung: 'EisgekÃ¼hlte, erfrischende Cola in der 0.33l Glasflasche.',
             kategorie: 'Trinken',
             preis: 1.99,
             url: 'cola',
-            bild: '/bilder/produkte/cola.jpg'
+            bild: '/bilder/produkte/cola.jpg',
+            extras: [
+                { text: 'EiswÃ¼rfel & Zitrone', preis: 0.00 }
+            ]
         },
         {
             name: 'Erdbeer Eis',
-            beschreibung: 'Eis mit Erdbeeren und Sahne',
+            beschreibung: 'Drei Kugeln cremiges Erdbeereis mit frischen Erdbeeren und einer Sahnehaube.',
             kategorie: 'Nachspeise',
-            preis: 2.99,
-            url: 'erdbeereis',
-            bild: '/bilder/produkte/eis.jpg'
+            preis: 3.50,
+            url: 'eis',
+            bild: '/bilder/produkte/eis.jpg',
+            extras: [
+                { text: 'Schokosauce', preis: 0.80 },
+                { text: 'Extra Sahne', preis: 0.50 }
+            ]
         },
         {
             name: 'Lahmacun',
-            beschreibung: 'turkish style lahmacun',
+            beschreibung: 'TÃ¼rkische Pizza mit wÃ¼rzigem Hackfleischbelag, serviert mit frischem Salat.',
             kategorie: 'Hauptgericht',
-            preis: 4.50,
+            preis: 5.50,
             url: 'lahmacun',
-            bild: '/bilder/produkte/lahmacun.jpg'
+            bild: '/bilder/produkte/lahmacun.jpg',
+            extras: [
+                { text: 'Mit SchafskÃ¤se', preis: 1.00 },
+                { text: 'Knoblauchsauce', preis: 0.30 }
+            ]
         },
         {
             name: 'Lasagne',
-            beschreibung: 'Lasagne aus Italien',
+            beschreibung: 'Hausgemachte Schichtnudeln mit Bolognese-Sauce und goldbraunem KÃ¤se Ã¼berbacken.',
             kategorie: 'Hauptgericht',
-            preis: 8.50,
+            preis: 9.20,
             url: 'lasagne',
-            bild: '/bilder/produkte/lasagne.jpg'
+            bild: '/bilder/produkte/lasagne.jpg',
+            extras: []
         },
         {
             name: 'Schokoladen Muffin',
-            beschreibung: 'Sehr süßer Schoko Muffin',
+            beschreibung: 'Flauschiger Muffin mit flÃ¼ssigem Schokoladenkern und SchokostÃ¼ckchen.',
             kategorie: 'Nachspeise',
             preis: 3.20,
             url: 'muffin',
-            bild: '/bilder/produkte/muffin.jpg'
+            bild: '/bilder/produkte/muffin.jpg',
+            extras: []
         },
         {
             name: 'Pizza Original',
-            beschreibung: '4 season Pizza',
+            beschreibung: 'Klassische Pizza mit Tomatensauce, Mozzarella und frischem Basilikum.',
             kategorie: 'Hauptgericht',
-            preis: 7.50,
+            preis: 8.50,
             url: 'pizza',
-            bild: '/bilder/produkte/pizza.jpg'
+            bild: '/bilder/produkte/pizza.jpg',
+            extras: [
+                { text: 'Extra KÃ¤se', preis: 1.50 },
+                { text: 'Salami', preis: 1.20 }
+            ]
         },
         {
-            name: 'Süßkartoffel Pommes',
-            beschreibung: 'Süßkartoffel Pommes mit Dip',
+            name: 'SÃ¼ÃŸkartoffel Pommes',
+            beschreibung: 'Knusprig frittierte SÃ¼ÃŸkartoffelstÃ¤bchen mit hausgemachtem Avocado-Dip.',
             kategorie: 'Hauptgericht',
             preis: 4.80,
             url: 'pommes',
-            bild: '/bilder/produkte/pommes.jpg'
-        },
+            bild: '/bilder/produkte/pommes.jpg',
+            extras: [
+                { text: 'TrÃ¼ffel-Mayonnaise', preis: 1.20 }
+            ]
+        }
     ]
 };
 

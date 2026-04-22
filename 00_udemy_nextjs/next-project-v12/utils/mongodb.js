@@ -1,24 +1,6 @@
-//root/ utils/mongodb.js
-
 /**
- * Global Caching Pattern:
- * In Next.js (besonders v12) sorgt der Hot-Reload in der Entwicklung dafür,
- * dass Dateien ständig neu eingelesen werden.
- * Würden wir einfach nur mongoose.connect aufrufen, hättest du nach jedem Speichern
- * einer Datei eine neue Verbindung. Durch das Speichern der Verbindung im global-Objekt
- * von Node.js bleibt sie über Re-builds hinweg bestehen.
- * Singleton-Ansatz:
- * Wir stellen sicher, dass nur eine einzige Instanz der Datenbankverbindung existiert.
- * Das schont die Ressourcen deines MongoDB-Servers (wichtig bei Atlas-Limits oder lokal unter Windows).
- * Promise-Handling:
- * Wir speichern nicht nur die fertige Verbindung (conn), sondern auch das promise.
- * Das verhindert "Race Conditions", falls dbConnect mehrmals fast gleichzeitig aufgerufen wird,
- * bevor die erste Verbindung aufgebaut wurde.
- * Verzicht auf dbDisconnect:
- * Wie besprochen, lassen wir die Verbindung offen, um die Latenz für den nächsten API-Request
- * niedrig zu halten (Connection Reuse).
+ * MongoDB-Helper in v12. Nutzt Caching, damit nicht bei jedem Reload neue Verbindungen entstehen.
  */
-
 import mongoose from 'mongoose';
 
 const MONGODB_URI = process.env.MONGODB_URI;

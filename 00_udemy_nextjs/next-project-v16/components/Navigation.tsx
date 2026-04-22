@@ -1,10 +1,6 @@
-//root/components/Navigation.tsx
-
 /**
- * Client Komponent:
- * 
+ * Client-Komponente fuer die Top-Navigation in v16. Enthält Logo und Warenkorb-Link.
  */
-
 'use client';
 
 import Link from 'next/link';
